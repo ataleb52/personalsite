@@ -1,0 +1,145 @@
+/******************************************************************
+Site Name: Ahmad Taleb
+Description: Drew up and coded a design for my personal site. If your reading this I assume you're probably more than an average web user. Just know the site's a work in progress, so before you look on in utter disgust at my code, just know it's still being worked on. 
+But welcome to my personal site! I've used Bootstrap to help out with building it and a some jQuery to build some of the other stuff. Look around and tell me what you think.
+Author: Ahmad Taleb
+Author URI: http://www.ahmadtaleb.com
+******************************************************************/
+.intro {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/iback.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .intro .intro_cont {
+    margin-top: 100px;
+    text-align: center; }
+    .intro .intro_cont img {
+      border-radius: 200px;
+      height: auto;
+      max-width: 45%;
+      margin-bottom: 20px; }
+    .intro .intro_cont .social_links a {
+      text-decoration: none;
+      margin: 0 10px; }
+      .intro .intro_cont .social_links a img {
+        max-width: 25%; }
+    .intro .intro_cont .intro_text {
+      background: rgba(250, 245, 249, 0.4);
+      text-align: justify;
+      padding: .5em;
+      margin: 20px 0; }
+      .intro .intro_cont .intro_text p {
+        margin-bottom: 0; }
+
+.blog {
+  background: #3498db; }
+  .blog .post {
+    background: white;
+    margin: 10px 0; }
+    .blog .post img {
+      height: 400px;
+      padding: 0; }
+    .blog .post .blog_text {
+      background: blue; }
+
+.contact {
+  text-align: center; }
+
+/*-----THE FOLLOWING CODE IS BY NO MEANS MINE AT ALL, I TOOK THE EXAMPLE GIVEN FROM MIXITUP.IO OF EMBOOKS.COM
+I BASICALLY RIPPED OUT WHAT THEY HAD AND ALTERED IT TO SOMETHING I NEEDED. SO WHILE THE CODE ISN'T EXACTLY WHAT
+THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
+.btn {
+  font-size: 16px;
+  background-color: black;
+  color: white; }
+
+.placeholder {
+  vertical-align: top;
+  width: 23%;
+  height: 0;
+  display: inline-block; }
+
+/*-----portfolio CSS-----*/
+#portfolio {
+  width: 100%;
+  padding-top: 20px;
+  background: #e74c3c; }
+  #portfolio header {
+    margin-bottom: 20px;
+    overflow: hidden; }
+    #portfolio header .filtering {
+      text-align: center; }
+      #portfolio header .filtering ul {
+        padding-left: 0; }
+        #portfolio header .filtering ul li {
+          display: inline-block; }
+          #portfolio header .filtering ul li .btn {
+            border-radius: 250px;
+            font-size: 25px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            line-height: 80px; }
+  #portfolio .portfolio_wrapper {
+    text-align: justify; }
+    #portfolio .portfolio_wrapper:after {
+      content: '';
+      width: 100%;
+      display: inline-block; }
+  #portfolio .portfolio_main article {
+    vertical-align: top;
+    width: 31.33%; }
+    #portfolio .portfolio_main article .item {
+      width: 100%;
+      margin: 0 0 20px;
+      display: inline-block;
+      position: relative; }
+      #portfolio .portfolio_main article .item:hover .hover {
+        opacity: 1;
+        display: block;
+        /* IE8 */ }
+      #portfolio .portfolio_main article .item .hover {
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        background: rgba(250, 245, 249, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        display: none\9;
+        /* IE8 */ }
+        #portfolio .portfolio_main article .item .hover span {
+          margin: -14px 0 0 -92px;
+          position: absolute;
+          top: 50%;
+          left: 50%; }
+      #portfolio .portfolio_main article .item img {
+        width: 100%;
+        height: auto; }
+
+#portfolio .mix {
+  opacity: 0;
+  display: none; }
+
+/*-----PORTFOLIO SECTION MEDIA QUERY CSS-----*/
+@media only screen and (max-width: 960px) {
+  /*-----portfolio CSS-----*/
+  #portfolio .portfolio_main article {
+    width: 30%; } }
+@media only screen and (max-width: 768px) {
+  /*-----portfolio CSS-----*/
+  #portfolio .portfolio_main article {
+    width: 48%; } }
+@media only screen and (max-width: 400px) {
+  /*-----portfolio CSS-----*/
+  #portfolio .portfolio_main article {
+    width: 100%; } }
