@@ -66,7 +66,80 @@
 		
 		
 		<!---------- PORTFOLIO ----------->	
-		<section id="portfolio">
+	<section id="portfolio">
+		<div id="filters" class="button-group container filtering">  
+			<h1>Work</h1>
+			<ul>
+				<li class="button" data-filter=".design"><a class="btn">Design</a></li>
+				<li class="button" data-filter=".web"><a class="btn">Web</a></li>
+				<li class="button" data-filter=".ideas"><a class="btn">Ideas</a></li>
+				<li class="button is-checked" data-filter="*"><a class="btn">All</a></li>
+			</ul>
+			
+		</div>
+		
+		
+		<div class="isotope container">
+		  <div class="element-item transition design">
+		  	<img src="img/mix_test.png"/>
+		  </div>
+		  
+		  <div class="element-item web">
+		  	<img src="img/ilm.png"/>
+		  </div>
+		  
+		  <div class="element-item post-transition ideas">
+		  </div>
+		  
+		  <div class="element-item post-transition web">
+		  </div>
+		  
+		  <div class="element-item transition design">
+		  </div>
+		  
+		  <div class="element-item alkali metal">
+		  </div>
+		  
+		  <div class="element-item alkali metal">
+		  </div>
+		  
+		  <div class="element-item transition metal">
+		  </div>
+		  
+		  <div class="element-item alkaline-earth metal">
+		  </div>
+		  
+		  <div class="element-item transition metal">
+		  </div>
+		  
+		  <div class="element-item post-transition metal">
+		  </div>
+		  
+		  <div class="element-item metalloid">
+		  </div>
+		  
+		  <div class="element-item transition metal">
+		  </div>
+		  
+		  <div class="element-item lanthanoid metal inner-transition">
+		  </div>
+		  
+		  <div class="element-item noble-gas nonmetal">
+		  </div>
+		  
+		  <div class="element-item diatomic nonmetal">
+		  </div>
+		  
+		  <div class="element-item actinoid metal inner-transition">
+		  </div>
+		  
+		  <div class="element-item actinoid metal inner-transition">
+		  </div>
+		</div>
+	</section>
+		
+		<!--
+<section id="portfolio">
 			<div class="container">
 				<header>
 					<div class="filtering">
@@ -137,6 +210,7 @@
 				</div>
 			</div>
 		</section>
+-->
 	
 		<!---------- BLOG ----------->
 		<!--
@@ -197,15 +271,43 @@
 		<!---------- JAVASCRIPT LINKS ----------->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="js/jquery.mixitup.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<!-- <script src="js/jquery.mixitup.min.js"></script> -->
+		<!--BOOTSTRAPS JS FOR THE MOBILE MENU-->
 		<script src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-		<script type="text/javascript" src="js/jqmodal.js"></script>
-		<script type="text/javascript" src="js/bootstrap-lightbox.js"></script>
-		<script type="text/javascript">
+		<!-- <script type="text/javascript" src="js/jquery.bxslider.min.js"></script> -->
+		<!-- <script type="text/javascript" src="js/jqmodal.js"></script> -->
+		<!-- <script type="text/javascript" src="js/bootstrap-lightbox.js"></script> -->
+		<!--
+<script type="text/javascript">
 			// INSTANTIATE MIXITUP
 			$(document).ready(function(){
 				$('#portfolio').mixitup();
+			});
+		</script>
+-->
+		
+		
+		<script>
+			$( function() {
+			  // init Isotope
+			  var $container = $('.isotope').isotope({
+			    itemSelector: '.element-item',
+			    layoutMode: 'fitRows',
+			  });
+			
+			  // filter functions
+			  var filterFns = {
+			    // show if number is greater than 50
+			  };
+			
+			  // bind filter button click
+			  $('#filters').on( 'click', 'li', function() {
+			    var filterValue = $( this ).attr('data-filter');
+			    // use filterFn if matches value
+			    filterValue = filterFns[ filterValue ] || filterValue;
+			    $container.isotope({ filter: filterValue });
+			  });
 			});
 		</script>
 	</body>

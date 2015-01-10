@@ -91,28 +91,40 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 	width: 100%;
 	padding-top: 20px;
 	background: #e74c3c;
-	header {
-		margin-bottom: 20px;
-		overflow: hidden;
-		.filtering {
-			text-align: center;
-			ul {
-				padding-left: 0;
-				li {
-					display: inline-block;
-					.btn {
-						border-radius: 250px;	
-						font-size: 25px;
-						height: 100px;
-						width: 100px;
-						text-align: center;
-						line-height: 80px;
-					}
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	.isotope {
+		.element-item {
+			width: 300px;
+			height: 300px;
+			img {
+				width: 300px;
+				height: 300px;
+			}
+		}
+	}
+	.filtering {
+		text-align: center;
+		ul {
+			padding-left: 0;
+			li {
+				display: inline-block;
+				.btn {
+					border-radius: 250px;	
+					font-size: 25px;
+					height: 100px;
+					width: 100px;
+					text-align: center;
+					line-height: 80px;
 				}
 			}
-		}	
+		}
+			
 	}
-	.portfolio_wrapper{
+	/*
+.portfolio_wrapper{
 		text-align: justify;
 		&:after {
 			content: '';
@@ -120,6 +132,7 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 			display: inline-block;
 		}
 	}
+*/
 	.portfolio_main {
 		article {
 		vertical-align: top;
@@ -164,13 +177,47 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 	}
 }
 
-#portfolio .mix{
-	opacity: 0;
-	display: none;
+/*ISOTOPE STYLES*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  margin: 5px;
+  background: #888;
+  color: #262524;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
 }
 
 
-
+.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
 
 
 
