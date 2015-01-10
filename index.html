@@ -46,7 +46,6 @@
 			<div class="container intro_cont">
 				<img class="my_mug" src="img/intro_img.png" class="">
 				<div class="social_links">
-					<a href="https://twitter.com/ataleb52" target="_blank"><img src="img/twitter.png" ></a>
 					<a href="https://facebook.com/ataleb52" target="_blank"><img src="img/facebook.png"></a>
 					<a href="http://www.linkedin.com/pub/ahmad-taleb/17/584/399" target="_blank"><img src="img/linkedin.png"></a>
 					<a href="http://www.flickr.com/photos/58607324@N02/" target="_blank"><img src="img/flickr.png"></a>
@@ -54,7 +53,7 @@
 					<a href="https://teamtreehouse.com/ataleb52" target="_blank"><img src="img/treehouse.png"></a>
 				</div>
 				<div class="intro_text">
-					<p>Lorizzle pizzle dolizzle check it out amet, consectetuer adipiscing shit. Fo shizzle its fo rizzle velizzle, dang volut- pizzle, suscipizzle quis, fo vel, fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Mah nizzle pimpin' tortizzle. Sizzle eriz- zle. Bizzle izzle dolizzle dapibizzle mah nizzle tempizzle owned. Maurizzle pel- lentesque nibh et turpizzle. Gangster sheezy mah nizzle. Pellentesque mofo yippiyo nisi. In hac habitasse phat dic- tumst. Donec dapibizzle. Curabitur tell- izzle urna, cool you son of a bizzle, mat- tizzle gangster, eleifend vitae, nunc. Shizzlin dizzle suscipizzle.</p>
+					<p>My name is Ahmad Taleb. I'm currently a business analyst, have worked in marketing, design & web development, and even a little bit of teaching. I have a do first, ask forgiveness later attitude which has given me a knack for getting things done. Unlike most I enjoy speaking in front of large crowds and get a kick out of it. I love working to develop high school aged youth, communities in need, and helping non-profits using the little web, design, and development skill that I have.</p>
 				</div>
 			</div>
 		</div>
@@ -67,7 +66,80 @@
 		
 		
 		<!---------- PORTFOLIO ----------->	
-		<section id="portfolio">
+	<section id="portfolio">
+		<div id="filters" class="button-group container filtering">  
+			<h1>Work</h1>
+			<ul>
+				<li class="button" data-filter=".design"><a class="btn">Design</a></li>
+				<li class="button" data-filter=".web"><a class="btn">Web</a></li>
+				<li class="button" data-filter=".ideas"><a class="btn">Ideas</a></li>
+				<li class="button is-checked" data-filter="*"><a class="btn">All</a></li>
+			</ul>
+			
+		</div>
+		
+		
+		<div class="isotope container">
+		  <div class="element-item transition design">
+		  	<img src="img/mix_test.png"/>
+		  </div>
+		  
+		  <div class="element-item web">
+		  	<img src="img/ilm.png"/>
+		  </div>
+		  
+		  <div class="element-item post-transition ideas">
+		  </div>
+		  
+		  <div class="element-item post-transition web">
+		  </div>
+		  
+		  <div class="element-item transition design">
+		  </div>
+		  
+		  <div class="element-item alkali metal">
+		  </div>
+		  
+		  <div class="element-item alkali metal">
+		  </div>
+		  
+		  <div class="element-item transition metal">
+		  </div>
+		  
+		  <div class="element-item alkaline-earth metal">
+		  </div>
+		  
+		  <div class="element-item transition metal">
+		  </div>
+		  
+		  <div class="element-item post-transition metal">
+		  </div>
+		  
+		  <div class="element-item metalloid">
+		  </div>
+		  
+		  <div class="element-item transition metal">
+		  </div>
+		  
+		  <div class="element-item lanthanoid metal inner-transition">
+		  </div>
+		  
+		  <div class="element-item noble-gas nonmetal">
+		  </div>
+		  
+		  <div class="element-item diatomic nonmetal">
+		  </div>
+		  
+		  <div class="element-item actinoid metal inner-transition">
+		  </div>
+		  
+		  <div class="element-item actinoid metal inner-transition">
+		  </div>
+		</div>
+	</section>
+		
+		<!--
+<section id="portfolio">
 			<div class="container">
 				<header>
 					<div class="filtering">
@@ -138,6 +210,7 @@
 				</div>
 			</div>
 		</section>
+-->
 	
 		<!---------- BLOG ----------->
 		<!--
@@ -198,15 +271,43 @@
 		<!---------- JAVASCRIPT LINKS ----------->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="js/jquery.mixitup.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<!-- <script src="js/jquery.mixitup.min.js"></script> -->
+		<!--BOOTSTRAPS JS FOR THE MOBILE MENU-->
 		<script src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-		<script type="text/javascript" src="js/jqmodal.js"></script>
-		<script type="text/javascript" src="js/bootstrap-lightbox.js"></script>
-		<script type="text/javascript">
+		<!-- <script type="text/javascript" src="js/jquery.bxslider.min.js"></script> -->
+		<!-- <script type="text/javascript" src="js/jqmodal.js"></script> -->
+		<!-- <script type="text/javascript" src="js/bootstrap-lightbox.js"></script> -->
+		<!--
+<script type="text/javascript">
 			// INSTANTIATE MIXITUP
 			$(document).ready(function(){
 				$('#portfolio').mixitup();
+			});
+		</script>
+-->
+		
+		
+		<script>
+			$( function() {
+			  // init Isotope
+			  var $container = $('.isotope').isotope({
+			    itemSelector: '.element-item',
+			    layoutMode: 'fitRows',
+			  });
+			
+			  // filter functions
+			  var filterFns = {
+			    // show if number is greater than 50
+			  };
+			
+			  // bind filter button click
+			  $('#filters').on( 'click', 'li', function() {
+			    var filterValue = $( this ).attr('data-filter');
+			    // use filterFn if matches value
+			    filterValue = filterFns[ filterValue ] || filterValue;
+			    $container.isotope({ filter: filterValue });
+			  });
 			});
 		</script>
 	</body>
