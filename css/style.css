@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 /******************************************************************
 Site Name: Ahmad Taleb
 Description: Drew up and coded a design for my personal site. If your reading this I assume you're probably more than an average web user. Just know the site's a work in progress, so before you look on in utter disgust at my code, just know it's still being worked on. 
@@ -5,6 +7,14 @@ But welcome to my personal site! I've used Bootstrap to help out with building i
 Author: Ahmad Taleb
 Author URI: http://www.ahmadtaleb.com
 ******************************************************************/
+/*-----NAVIGATION STYLES-----*/
+.navigation {
+  font-weight: 300;
+  text-transform: uppercase; }
+
+* {
+  font-family: 'Oswald', sans-serif; }
+
 .intro {
   display: table;
   height: 100%;
@@ -18,24 +28,31 @@ Author URI: http://www.ahmadtaleb.com
   .intro .intro_cont {
     margin-top: 100px;
     text-align: center; }
-    .intro .intro_cont img {
+    .intro .intro_cont .my_mug {
       border-radius: 200px;
       height: auto;
+      width: 250px;
       max-width: 45%;
       margin-bottom: 20px; }
-    .intro .intro_cont .social_links a {
-      text-decoration: none;
-      margin: 0 10px; }
-      .intro .intro_cont .social_links a img {
-        max-width: 25%; }
+    .intro .intro_cont .social_links {
+      margin-bottom: 20px; }
+      .intro .intro_cont .social_links a {
+        text-decoration: none;
+        margin: 0 10px; }
+        .intro .intro_cont .social_links a img {
+          max-width: 25%; }
     .intro .intro_cont .intro_text {
-      background: rgba(250, 245, 249, 0.4);
+      background: rgba(250, 245, 249, 0.6);
       text-align: justify;
       padding: .5em;
-      margin: 20px 0; }
+      margin: 0 auto 20px auto;
+      border-radius: 5px;
+      max-width: 550px; }
       .intro .intro_cont .intro_text p {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-family: 'Open Sans', sans-serif; }
 
+/*-----BLOG STYLES-----*/
 .blog {
   background: #3498db; }
   .blog .post {
@@ -47,23 +64,6 @@ Author URI: http://www.ahmadtaleb.com
     .blog .post .blog_text {
       background: blue; }
 
-.contact {
-  text-align: center; }
-
-/*-----THE FOLLOWING CODE IS BY NO MEANS MINE AT ALL, I TOOK THE EXAMPLE GIVEN FROM MIXITUP.IO OF EMBOOKS.COM
-I BASICALLY RIPPED OUT WHAT THEY HAD AND ALTERED IT TO SOMETHING I NEEDED. SO WHILE THE CODE ISN'T EXACTLY WHAT
-THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
-.btn {
-  font-size: 16px;
-  background-color: black;
-  color: white; }
-
-.placeholder {
-  vertical-align: top;
-  width: 23%;
-  height: 0;
-  display: inline-block; }
-
 /*-----portfolio CSS-----*/
 #portfolio {
   width: 100%;
@@ -71,7 +71,6 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
   background: #e74c3c;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 20px;
   padding-bottom: 20px;
   	/*
   .portfolio_wrapper{
@@ -101,7 +100,11 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
           height: 100px;
           width: 100px;
           text-align: center;
-          line-height: 80px; }
+          line-height: 80px;
+          background-color: black;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 300; }
   #portfolio .portfolio_main article {
     vertical-align: top;
     width: 31.33%; }
@@ -153,53 +156,45 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 .element-item {
   position: relative;
   float: left;
-  margin: 5px;
-  background: #888;
-  color: #262524; }
+  margin: 5px; }
+  .element-item img {
+    border-radius: 5px; }
 
 .element-item > * {
   margin: 0;
   padding: 0; }
 
-.element-item.alkali {
-  background: #F00;
-  background: red; }
+/*-----CONTACT STYLES-----*/
+.contact {
+  text-transform: uppercase;
+  text-align: center;
+  background: #bdc3c7;
+  padding: 20px 0; }
+  .contact h1, .contact h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; }
+  .contact h1 {
+    color: #e74c3c;
+    font-size: 50px;
+    margin: 0; }
+  .contact h3 {
+    color: #3498db;
+    font-size: 30px;
+    max-width: 75%;
+    margin: 0 auto; }
+  .contact form {
+    margin: 10px 0; }
 
-.element-item.alkaline-earth {
-  background: #F80;
-  background: #ff9900; }
-
-.element-item.lanthanoid {
-  background: #FF0;
-  background: #ccff00; }
-
-.element-item.actinoid {
-  background: #0F0;
-  background: #33ff00; }
-
-.element-item.transition {
-  background: #0F8;
-  background: #00ff66; }
-
-.element-item.post-transition {
-  background: #0FF;
-  background: cyan; }
-
-.element-item.metalloid {
-  background: #08F;
-  background: #0066ff; }
-
-.element-item.diatomic {
-  background: #00F;
-  background: #3300ff; }
-
-.element-item.halogen {
-  background: #F0F;
-  background: #cc00ff; }
-
-.element-item.noble-gas {
-  background: #F08;
-  background: #ff0099; }
+.footer {
+  background: #34495e;
+  text-align: center;
+  padding: 20px; }
+  .footer h5 {
+    margin: 0;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em; }
 
 /*-----PORTFOLIO SECTION MEDIA QUERY CSS-----*/
 @media only screen and (max-width: 960px) {
@@ -210,6 +205,12 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
   /*-----portfolio CSS-----*/
   #portfolio .portfolio_main article {
     width: 48%; } }
+@media only screen and (max-width: 640px) {
+  .contact h3 {
+    max-width: 100%; } }
+@media only screen and (max-width: 480px) {
+  .contact h3 {
+    max-width: 100%; } }
 @media only screen and (max-width: 400px) {
   /*-----portfolio CSS-----*/
   #portfolio .portfolio_main article {
