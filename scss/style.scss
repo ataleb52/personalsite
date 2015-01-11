@@ -5,6 +5,22 @@ But welcome to my personal site! I've used Bootstrap to help out with building i
 Author: Ahmad Taleb
 Author URI: http://www.ahmadtaleb.com
 ******************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+
+
+/*-----NAVIGATION STYLES-----*/
+.navigation {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+
+
+* {
+	font-family: 'Oswald', sans-serif;
+}
 .intro {
 	display: table;
 	height: 100%;
@@ -18,13 +34,15 @@ Author URI: http://www.ahmadtaleb.com
 	.intro_cont {
 		margin-top: 100px;
 		text-align: center;
-		img {
+		.my_mug {
 			border-radius: 200px;
 			height: auto;
+			width: 250px;
 			max-width: 45%;
 			margin-bottom: 20px;
 		}
 		.social_links {
+			margin-bottom: 20px;
 			a {
 				text-decoration: none;
 				margin: 0 10px;
@@ -34,18 +52,22 @@ Author URI: http://www.ahmadtaleb.com
 			}
 		}
 		.intro_text {
-			background: rgba(250, 245, 249, .4);
+			background: rgba(250, 245, 249, .6);
 			text-align: justify;
 			padding: .5em;
-			margin: 20px 0;
+			margin: 0 auto 20px auto;
+			border-radius: 5px;
+			max-width: 550px;
 			p {
 				margin-bottom: 0;
+				font-family: 'Open Sans', sans-serif;
 			}
 			
 		}
 	}
 }
 
+/*-----BLOG STYLES-----*/
 .blog {
 	background: #3498db;
 	.post {
@@ -62,28 +84,6 @@ Author URI: http://www.ahmadtaleb.com
 	}
 }
 
-.contact {
-	text-align: center;
-	h1,h3 {
-	}
-}
-
-/*-----THE FOLLOWING CODE IS BY NO MEANS MINE AT ALL, I TOOK THE EXAMPLE GIVEN FROM MIXITUP.IO OF EMBOOKS.COM
-I BASICALLY RIPPED OUT WHAT THEY HAD AND ALTERED IT TO SOMETHING I NEEDED. SO WHILE THE CODE ISN'T EXACTLY WHAT
-THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
-
-.btn{
-	font-size: 16px;
-	background-color: black;
-	color: white;
-}
-
-.placeholder{
-	vertical-align: top;
-	width: 23%;
-	height: 0;
-	display: inline-block;
-}
 
 /*-----portfolio CSS-----*/
 
@@ -93,7 +93,6 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 	background: #e74c3c;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 20px;
 	padding-bottom: 20px;
 	.isotope {
 		.element-item {
@@ -118,6 +117,10 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 					width: 100px;
 					text-align: center;
 					line-height: 80px;
+					background-color: black;
+					color: white;
+					text-transform: uppercase;
+					font-weight: 300;
 				}
 			}
 		}
@@ -198,8 +201,9 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
   position: relative;
   float: left;
   margin: 5px;
-  background: #888;
-  color: #262524;
+  img {
+	  border-radius: 5px;
+  }
 }
 
 .element-item > * {
@@ -207,31 +211,46 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
   padding: 0;
 }
 
+/*-----CONTACT STYLES-----*/
 
-.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
-.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
-.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
-.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
-.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
-.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
-.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
-.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
-.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
-.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+.contact {
+	text-transform: uppercase;
+	text-align: center;
+	background: #bdc3c7;
+	padding: 20px 0;
+	h1,h3 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+	}
+	h1 {
+		color: #e74c3c;
+		font-size: 50px;
+		margin: 0;
+	}
+	h3 {
+		color: #3498db;
+		font-size: 30px;
+		max-width: 75%;
+		margin: 0 auto;
+	}
+	form {
+		margin: 10px 0;
+	}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.footer {
+	background: #34495e;
+	text-align: center;
+	padding: 20px;
+	h5 {
+		margin: 0;
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: 1em;
+	}
+}
 
 /*-----PORTFOLIO SECTION MEDIA QUERY CSS-----*/
 
@@ -253,6 +272,11 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 }
 
 @media only screen and (max-width: 640px) {
+	.contact {
+		h3 {
+			max-width: 100%;
+		}
+	}
 	
 }
 
@@ -261,6 +285,11 @@ THEY HAVE IT IS ORIGINALLY THEIRS.-----*/
 }
 
 @media only screen and (max-width: 480px) {
+	.contact {
+		h3 {
+			max-width: 100%;
+		}
+	}
 	
 }
 

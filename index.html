@@ -10,7 +10,7 @@
 
 	<body>
 		<!---------- NAVIGATION BAR ----------->
-		<div class="container">
+		<div class="container navigation">
 			<nav class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
 			  <div class="container">
 			    <div class="navbar-header">
@@ -30,9 +30,11 @@
 			        <li>
 			          <a href="#">Work</a>
 			        </li>
-			        <li>
+			        <!--
+					<li>
 			          <a href="#">Blog</a>
 			        </li>
+					-->
 			        <li>
 			          <a href="#">Contact</a>
 			        </li>
@@ -57,86 +59,84 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
+
 		<!---------- PORTFOLIO ----------->	
-	<section id="portfolio">
-		<div id="filters" class="button-group container filtering">  
-			<h1>Work</h1>
-			<ul>
-				<li class="button" data-filter=".design"><a class="btn">Design</a></li>
-				<li class="button" data-filter=".web"><a class="btn">Web</a></li>
-				<li class="button" data-filter=".ideas"><a class="btn">Ideas</a></li>
-				<li class="button is-checked" data-filter="*"><a class="btn">All</a></li>
-			</ul>
+		<section id="portfolio">
+			<div id="filters" class="button-group container filtering">  
+				<!-- <h1>Work</h1> -->
+				<ul>
+					<li class="button" data-filter=".design"><a class="btn">Design</a></li>
+					<li class="button" data-filter=".web"><a class="btn">Web</a></li>
+					<li class="button" data-filter=".ideas"><a class="btn">Ideas</a></li>
+					<li class="button is-checked" data-filter="*"><a class="btn">All</a></li>
+				</ul>
+				
+			</div>
 			
-		</div>
-		
-		
-		<div class="isotope container">
-		  <div class="element-item transition design">
-		  	<img src="img/mix_test.png"/>
-		  </div>
-		  
-		  <div class="element-item web">
-		  	<img src="img/ilm.png"/>
-		  </div>
-		  
-		  <div class="element-item post-transition ideas">
-		  </div>
-		  
-		  <div class="element-item post-transition web">
-		  </div>
-		  
-		  <div class="element-item transition design">
-		  </div>
-		  
-		  <div class="element-item alkali metal">
-		  </div>
-		  
-		  <div class="element-item alkali metal">
-		  </div>
-		  
-		  <div class="element-item transition metal">
-		  </div>
-		  
-		  <div class="element-item alkaline-earth metal">
-		  </div>
-		  
-		  <div class="element-item transition metal">
-		  </div>
-		  
-		  <div class="element-item post-transition metal">
-		  </div>
-		  
-		  <div class="element-item metalloid">
-		  </div>
-		  
-		  <div class="element-item transition metal">
-		  </div>
-		  
-		  <div class="element-item lanthanoid metal inner-transition">
-		  </div>
-		  
-		  <div class="element-item noble-gas nonmetal">
-		  </div>
-		  
-		  <div class="element-item diatomic nonmetal">
-		  </div>
-		  
-		  <div class="element-item actinoid metal inner-transition">
-		  </div>
-		  
-		  <div class="element-item actinoid metal inner-transition">
-		  </div>
-		</div>
-	</section>
+			
+			<div class="isotope container">
+			  <div class="element-item transition design">
+			  	<img src="img/mix_test.png"/>
+			  </div>
+			  
+			  <div class="element-item web">
+			  	<img src="img/ilm.png"/>
+			  </div>
+			  
+			  <div class="element-item post-transition design">
+			  	<img src="img/eid.png"/>
+			  </div>
+			  
+			  <div class="element-item post-transition web">
+			  	<img src="img/rr.png" />
+			  </div>
+			  
+			  <div class="element-item transition web">
+			  	<img src="img/min.png"/>
+			  </div>
+			  
+			  <!--
+<div class="element-item alkali metal">
+			  </div>
+			  
+			  <div class="element-item alkali metal">
+			  </div>
+			  
+			  <div class="element-item transition metal">
+			  </div>
+			  
+			  <div class="element-item alkaline-earth metal">
+			  </div>
+			  
+			  <div class="element-item transition metal">
+			  </div>
+			  
+			  <div class="element-item post-transition metal">
+			  </div>
+			  
+			  <div class="element-item metalloid">
+			  </div>
+			  
+			  <div class="element-item transition metal">
+			  </div>
+			  
+			  <div class="element-item lanthanoid metal inner-transition">
+			  </div>
+			  
+			  <div class="element-item noble-gas nonmetal">
+			  </div>
+			  
+			  <div class="element-item diatomic nonmetal">
+			  </div>
+			  
+			  <div class="element-item actinoid metal inner-transition">
+			  </div>
+			  
+			  <div class="element-item actinoid metal inner-transition">
+			  </div>
+-->
+			</div>
+		</section>
 		
 		<!--
 <section id="portfolio">
@@ -254,18 +254,20 @@
 		<div class="contact">
 			<div class="container">
 				<h1>Ahmad Taleb</h1>
-				<h3>I do stuff to change things, break them, fix them, and make things happen in the process.</h3>
-				<form>
+				<h3>I do stuff to break things, fix them, and change them. </br>I make things happen.</h3>
+				<!--
+<form>
 					Name <input type="text" name="fname">
 					Email <input type="text" name="email">
 					Talk <input type="text" name="talk">
 					<input type="submit" value="Submit">
 				</form>
+-->
 			</div>
 		</div>
 		<!---------- FOOTER ----------->
 		<div class="footer"> 
-			<h5>©2013 Ahmad Taleb</h5>
+			<h5>&copy <script>document.write(new Date().getFullYear())</script> Ahmad Taleb</h5>
 		</div>
 		
 		<!---------- JAVASCRIPT LINKS ----------->
