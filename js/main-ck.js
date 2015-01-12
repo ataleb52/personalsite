@@ -1,2 +1,1 @@
-//*-----JQUERY FUNCTIONS-----*//
-$(document).ready(function(){$("#portfolio").mixitup()});
+$(document).ready(function(){$(window).load(function(){var e=$(".isotope").isotope({itemSelector:".element-item",layoutMode:"fitRows"}),t={};$("#filters").on("click","li",function(){var n=$(this).attr("data-filter");n=t[n]||n;e.isotope({filter:n})})})});

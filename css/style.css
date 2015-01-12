@@ -12,6 +12,7 @@ Author URI: http://www.ahmadtaleb.com
   font-weight: 300;
   text-transform: uppercase; }
 
+/*-----INTRO STYLES-----*/
 * {
   font-family: 'Oswald', sans-serif; }
 
@@ -64,24 +65,14 @@ Author URI: http://www.ahmadtaleb.com
     .blog .post .blog_text {
       background: blue; }
 
-/*-----portfolio CSS-----*/
+/*-----PORTFOLIO CSS-----*/
 #portfolio {
   width: 100%;
   padding-top: 20px;
   background: #e74c3c;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 20px;
-  	/*
-  .portfolio_wrapper{
-  		text-align: justify;
-  		&:after {
-  			content: '';
-  			width: 100%;
-  			display: inline-block;
-  		}
-  	}
-  */ }
+  padding-bottom: 20px; }
   #portfolio .isotope .element-item {
     width: 300px;
     height: 300px; }
@@ -164,25 +155,25 @@ Author URI: http://www.ahmadtaleb.com
   margin: 0;
   padding: 0; }
 
-/*-----CONTACT STYLES-----*/
-.contact {
+/*-----CLOSING STYLES-----*/
+.closing {
   text-transform: uppercase;
   text-align: center;
   background: #bdc3c7;
   padding: 20px 0; }
-  .contact h1, .contact h3 {
+  .closing h1, .closing h3 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700; }
-  .contact h1 {
+  .closing h1 {
     color: #e74c3c;
     font-size: 50px;
     margin: 0; }
-  .contact h3 {
+  .closing h3 {
     color: #3498db;
     font-size: 30px;
     max-width: 75%;
     margin: 0 auto; }
-  .contact form {
+  .closing form {
     margin: 10px 0; }
 
 .footer {

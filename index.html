@@ -2,8 +2,8 @@
 <html>
 	<header>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css"> 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-lightbox.css">
 		<link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
 		<title>Ahmad Taleb</title>	
 	</header>
@@ -55,7 +55,7 @@
 					<a href="https://teamtreehouse.com/ataleb52" target="_blank"><img src="img/treehouse.png"></a>
 				</div>
 				<div class="intro_text">
-					<p>My name is Ahmad Taleb. I'm currently a business analyst, have worked in marketing, design & web development, and even a little bit of teaching. I have a do first, ask forgiveness later attitude which has given me a knack for getting things done. Unlike most I enjoy speaking in front of large crowds and get a kick out of it. I love working to develop high school aged youth, communities in need, and helping non-profits using the little web, design, and development skill that I have.</p>
+					<p>My name is Ahmad Taleb. I'm currently a business analyst, have worked in marketing, design & web development, and even a little bit of teaching. I have a do first, ask forgiveness later attitude which has given me a knack for getting things done. Unlike most I enjoy speaking in front of large crowds and get a kick out of it. I love working to develop high school aged youth, communities in need, and helping non-profits.</p>
 				</div>
 			</div>
 		</div>
@@ -74,11 +74,14 @@
 			</div>
 			
 			
-			<div class="isotope container">
-			  <div class="element-item transition design">
-			  	<img src="img/mix_test.png"/>
-			  </div>
+			<div class="isotope container" id="image-popups">
 			  
+			  <div class="element-item transition design">
+			  	<a class="image-popup-vertical-fit" href="img/mix_test.png" data-effect="mfp-zoom-in" >
+			  		<img src="img/mix_test.png"/>
+			  	</a>
+			  </div>
+			 		  
 			  <div class="element-item web">
 			  	<img src="img/ilm.png"/>
 			  </div>
@@ -94,123 +97,8 @@
 			  <div class="element-item transition web">
 			  	<img src="img/min.png"/>
 			  </div>
-			  
-			  <!--
-<div class="element-item alkali metal">
-			  </div>
-			  
-			  <div class="element-item alkali metal">
-			  </div>
-			  
-			  <div class="element-item transition metal">
-			  </div>
-			  
-			  <div class="element-item alkaline-earth metal">
-			  </div>
-			  
-			  <div class="element-item transition metal">
-			  </div>
-			  
-			  <div class="element-item post-transition metal">
-			  </div>
-			  
-			  <div class="element-item metalloid">
-			  </div>
-			  
-			  <div class="element-item transition metal">
-			  </div>
-			  
-			  <div class="element-item lanthanoid metal inner-transition">
-			  </div>
-			  
-			  <div class="element-item noble-gas nonmetal">
-			  </div>
-			  
-			  <div class="element-item diatomic nonmetal">
-			  </div>
-			  
-			  <div class="element-item actinoid metal inner-transition">
-			  </div>
-			  
-			  <div class="element-item actinoid metal inner-transition">
-			  </div>
--->
 			</div>
 		</section>
-		
-		<!--
-<section id="portfolio">
-			<div class="container">
-				<header>
-					<div class="filtering">
-						<h1>Work</h1>
-						<ul>
-							<li class="filter" data-filter="design"><a class="btn">Design</a></li>
-							<li class="filter" data-filter="web"><a class="btn">Web</a></li>
-							<li class="filter" data-filter="idea"><a class="btn">Ideas</a></li>
-							<li class="filter" data-filter="all"><a class="btn">All</a></li>
-						</ul>
-					</div>
-				</header>
-				<div class="portfolio_main">
-					<div class="portfolio_wrapper">
-						<article class="mix design" data-cat="design">
-							<a data-toggle="lightbox" href="#demoLightbox" class="span2 thumbnail item">
-								<img src="img/mix_test.png"/>
-								<div class="hover"><span>Learn More</span></div>
-							</a>
-							
-							<div id="demoLightbox" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-			                    <div class="lightbox-content">
-			                        <img src="img/eid.png" />
-			                    </div>
-			                </div>
-						</article>
-						
-						
-						
-						<article class="mix web" data-cat="web">
-							<a href="http://www.ilmseek.com" class="item">
-								<img src="img/ilm.png"/>
-								<div class="hover"><span>Learn More</span></div>
-							</a>
-						</article>
-						
-						<article class="mix idea" data-cat="idea">
-							<a href="#" class="item">
-								<img src="img/ilm.png"/>
-								<div class="hover"><span>Learn More</span></div>
-							</a>
-						</article>
-						
-						<article class="mix design" data-cat="design">
-							<a href="#" class="item">
-								<img src="img/eid.png"/>
-								<div class="hover"><span>Learn More</span></div>
-							</a>
-						</article>
-						
-						<article class="mix web" data-cat="web">
-							<a href="http://www.ramadanrewards.com" class="item">
-								<img src="img/rr.png" />
-								<div class="hover"><span>Learn More</span></div>
-							</a>
-						</article>
-						
-						<article class="mix idea" ddata-cat="idea">
-							<a href="#" class="item">
-								<img src="img/min.png"/>
-								<div class="hover"><span>Learn More</span></div>
-							</a>
-						</article>
-						
-						<div class="placeholder"></div>
-						<div class="placeholder"></div>
-					</div>
-				</div>
-			</div>
-		</section>
--->
 	
 		<!---------- BLOG ----------->
 		<!--
@@ -250,19 +138,11 @@
 			</div>
 		</div>
 -->
-		<!---------- CONTACT FORM ----------->
-		<div class="contact">
+		<!----------CLOSING----------->
+		<div class="closing">
 			<div class="container">
 				<h1>Ahmad Taleb</h1>
 				<h3>I do stuff to break things, fix them, and change them. </br>I make things happen.</h3>
-				<!--
-<form>
-					Name <input type="text" name="fname">
-					Email <input type="text" name="email">
-					Talk <input type="text" name="talk">
-					<input type="submit" value="Submit">
-				</form>
--->
 			</div>
 		</div>
 		<!---------- FOOTER ----------->
@@ -271,46 +151,46 @@
 		</div>
 		
 		<!---------- JAVASCRIPT LINKS ----------->
-		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
 		<script src="js/isotope.pkgd.min.js"></script>
-		<!-- <script src="js/jquery.mixitup.min.js"></script> -->
-		<!--BOOTSTRAPS JS FOR THE MOBILE MENU-->
+		<!--Bootstraps JS for the mobile menu-->
 		<script src="js/bootstrap.js"></script>
-		<!-- <script type="text/javascript" src="js/jquery.bxslider.min.js"></script> -->
-		<!-- <script type="text/javascript" src="js/jqmodal.js"></script> -->
-		<!-- <script type="text/javascript" src="js/bootstrap-lightbox.js"></script> -->
+		<script src="js/jquery.magnific-popup.js"></script>
+		<script src="js/main.js"></script>
 		<!--
-<script type="text/javascript">
-			// INSTANTIATE MIXITUP
-			$(document).ready(function(){
-				$('#portfolio').mixitup();
+<script>
+			// Image popups
+			$('#image-popups').magnificPopup({
+			  delegate: 'a',
+			  type: 'image',
+			  removalDelay: 500, //delay removal by X to allow out-animation
+			  callbacks: {
+			    beforeOpen: function() {
+			      // just a hack that adds mfp-anim class to markup 
+			       this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+			       this.st.mainClass = this.st.el.attr('data-effect');
+			    }
+			  },
+			  closeOnContentClick: true,
+			  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 			});
-		</script>
+		</script>	
 -->
-		
-		
 		<script>
-			$( function() {
-			  // init Isotope
-			  var $container = $('.isotope').isotope({
-			    itemSelector: '.element-item',
-			    layoutMode: 'fitRows',
-			  });
-			
-			  // filter functions
-			  var filterFns = {
-			    // show if number is greater than 50
-			  };
-			
-			  // bind filter button click
-			  $('#filters').on( 'click', 'li', function() {
-			    var filterValue = $( this ).attr('data-filter');
-			    // use filterFn if matches value
-			    filterValue = filterFns[ filterValue ] || filterValue;
-			    $container.isotope({ filter: filterValue });
-			  });
+		$(document).ready(function() {
+			$('.image-popup-vertical-fit').magnificPopup ( {
+				type: 'image',
+				closeOnContentClick: true,
+				mainClass: 'mfp-img-mobile',
+				image: {
+					verticalFit: true
+				}
 			});
+		});
+		
+		
+		
 		</script>
 	</body>
 </html>

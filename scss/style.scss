@@ -17,7 +17,7 @@ Author URI: http://www.ahmadtaleb.com
 }
 
 
-
+/*-----INTRO STYLES-----*/
 * {
 	font-family: 'Oswald', sans-serif;
 }
@@ -85,7 +85,7 @@ Author URI: http://www.ahmadtaleb.com
 }
 
 
-/*-----portfolio CSS-----*/
+/*-----PORTFOLIO CSS-----*/
 
 #portfolio{
 	width: 100%;
@@ -126,16 +126,6 @@ Author URI: http://www.ahmadtaleb.com
 		}
 			
 	}
-	/*
-.portfolio_wrapper{
-		text-align: justify;
-		&:after {
-			content: '';
-			width: 100%;
-			display: inline-block;
-		}
-	}
-*/
 	.portfolio_main {
 		article {
 		vertical-align: top;
@@ -211,9 +201,9 @@ Author URI: http://www.ahmadtaleb.com
   padding: 0;
 }
 
-/*-----CONTACT STYLES-----*/
+/*-----CLOSING STYLES-----*/
 
-.contact {
+.closing {
 	text-transform: uppercase;
 	text-align: center;
 	background: #bdc3c7;
@@ -300,6 +290,8 @@ Author URI: http://www.ahmadtaleb.com
 		width: 100%;
 	}
 }
+
+
 
 
 
